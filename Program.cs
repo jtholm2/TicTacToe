@@ -68,7 +68,7 @@ namespace TicTacToe
             }
             else if(this.board[i, j] != " " && this.board[i,j] == this.board[i+1,j] && this.board[i, j] == this.board[i+2, j])
             {
-                if (this.board[i, j].Equals(this.userPiece))
+                if (this.board[i, j].Equals(this.userPiece)) 
                     Console.WriteLine("Congrats! You won!");
                 else
                     Console.WriteLine("Sorry, better luck next time!");
