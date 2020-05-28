@@ -29,7 +29,7 @@ namespace TicTacToe
                                                             };
         }
 
-        public void initializeBoard()
+        public void InitializeBoard()
         {
             for (int i = 0; i < 3; i++)
             {
@@ -40,7 +40,7 @@ namespace TicTacToe
             }
         }
 
-        public void printBoard()
+        public void PrintBoard()
         {
             int counter = 0;
             foreach (string a in board)
@@ -121,20 +121,18 @@ namespace TicTacToe
             }
         }
 
-        public void startGame()
+        public void StartGame()
         {
             Console.WriteLine("Would you like to play tic-tac-toe? Enter y or n: ");
             string userChoice = Console.ReadLine().ToLower();
-            initializeBoard();
+            InitializeBoard();
             if (userChoice.Equals("y"))
             {
                 while (true)
                 {
-                    printBoard();
+                    PrintBoard();
                     if (DidSomeoneWin())
-                    {
                         break;
-                    }
                     else
                         MakeASelection();
                 }
@@ -147,7 +145,7 @@ namespace TicTacToe
         public static void Main(string[] args)
         {
             Game test = new Game("X", "O");
-            test.startGame();
+            test.StartGame();
         }
     }
 }
