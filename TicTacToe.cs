@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace TicTacToe
 {
-    public class UpdatedGame
+    public class TicTacToe
     {
         private string userPiece;
         private string computerPiece;
@@ -15,7 +15,7 @@ namespace TicTacToe
         private int length;
         private List<string> historicalChoices;
 
-        public UpdatedGame(int size)
+        public TicTacToe(int size)
         {
             this.userPiece = "X";
             this.computerPiece = "O";

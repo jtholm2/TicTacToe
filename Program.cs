@@ -8,7 +8,7 @@ namespace TicTacToe
         {
             Console.WriteLine("Please enter a size greater than 3 and less than 10: ");
             int size = Convert.ToInt32(Console.ReadLine());
-            UpdatedGame game = new UpdatedGame(size);
+            TicTacToe game = new TicTacToe(size);
             game.InitializeBoard();
             game.EstablishWinningBoards();
             while (true)
